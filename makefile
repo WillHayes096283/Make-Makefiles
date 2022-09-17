@@ -31,6 +31,6 @@ Officer.o:	Officer.cpp Officer.h ##Compiles the Officer.o file from it's source 
 
 main.o: 	main.cpp Employee.h Supervisor.h Officer.h ##Compiles main.o from it's source file
 	$(CC) $(CFLAGS) -c main.cpp
-
+##Removes all object files, emacs back ups, and targets from the program folder
 clean:
-	$(RM) $(TARGET) *.o *~ ##Removes all object (.o) files, emacs backup files, and the targets
+	$(RM) $(TARGET) *.o *~ 
